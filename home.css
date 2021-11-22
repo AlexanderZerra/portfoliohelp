@@ -1,0 +1,167 @@
+/*  H1 and the like tags */
+
+h1 {
+  color: black;
+}
+
+/* Body and the like tags */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* P tags  */
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.jobtitle {
+  display: flex;
+  margin-top: 0px;
+}
+
+/* DIV tags */
+
+/* PHOTO of me also in INTRO section*/
+
+.photocontainer {
+  display: flex;
+  align-items: center;
+}
+
+.photocard {
+  width: 200px;
+  border-radius: 150px;
+  margin-left: 400px;
+}
+/* Section tag INTRO*/
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 50px;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+.infotext {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* Section tag PROJECT */
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+.projectcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+/* neumorphism for the box shadow effect */
+.projectcard {
+  width: 300px;
+  height: 500px;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow: 5px 5px 17px #666666, -5px -5px 17px #ffffff;
+}
+
+.projectone {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.projecttwo {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+}
+/* Section tag TECHNOLOGY */
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+.techcontainer {
+  display: flex;
+}
+
+.techcard {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+  display: inline;
+}
+
+.techhtml {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+  display: inline;
+}
+
+.techcss {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+  display: inline;
+}
+
+.techjs {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+/* STAR RATING */
+.checked {
+  color: orange;
+}
+
+/* SECTION tag Header area */
+.header {
+  height: 100vh;
+  font-size: 30px;
+  color: white;
+  background-color: gray;
+}
+
+/* Socials in Section tag Header */
+
+.mysocialstuff {
+  padding-bottom: 200px;
+}
+
+.socialstuff {
+  margin-top: 10px;
+}
+
+/* Footer element */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
