@@ -1,69 +1,100 @@
-/*  H1 and the like tags */
-
-h1 {
-  color: black;
-}
-
-/* Body and the like tags */
-
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
 }
 
-hr {
-  margin-left: 20px;
-  margin-right: 20px;
+section {
+  background-color: white;
 }
 
-/* P tags  */
+footer {
+  color: white;
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  border: solid white 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  font-size: 20px;
+  width: 500px;
+}
+
+li {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
 
 p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.jobtitle {
+.top {
+  background-color: grey;
+  height: 100vh;
+  font-size: 50px;
+  color: white;
+}
+
+.intro-area {
   display: flex;
-  margin-top: 0px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* DIV tags */
+.intro-text {
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
 
-/* PHOTO of me also in INTRO section*/
+.sociallinks {
+  padding-bottom: 100px;
+}
+
+.logo {
+  height: 100px;
+  margin: 10px;
+}
+
+.socials {
+  margin: 15px;
+}
+
+.aboutinfo {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
 
 .photocontainer {
   display: flex;
   align-items: center;
 }
 
-.photocard {
+.photome {
   width: 200px;
   border-radius: 150px;
-  margin-left: 400px;
-}
-/* Section tag INTRO*/
-
-.intro {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 50px;
-  flex-direction: column;
-  text-align: center;
-  padding: 50px;
+  margin-left: 40px;
 }
 
-.infotext {
-  font-size: 20px;
-  font-weight: 300;
-}
-/* Section tag PROJECT */
 .projects {
   display: flex;
   flex-direction: column;
@@ -75,93 +106,38 @@ p {
   display: flex;
   justify-content: space-around;
 }
-/* neumorphism for the box shadow effect */
+
 .projectcard {
+  margin: 10px;
   width: 300px;
-  height: 500px;
+  height: 350px;
   border-radius: 0px;
   background: #ffffff;
   box-shadow: 5px 5px 17px #666666, -5px -5px 17px #ffffff;
 }
 
-.projectone {
+.project-image {
   margin-top: 20px;
-  width: 200px;
-  border-radius: 100px;
+  width: 175px;
+  border-radius: 30px;
 }
 
-.projecttwo {
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 100px;
-}
-/* Section tag TECHNOLOGY */
+@media only screen and(max-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projectcontainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.technology {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 50px;
-}
-
-.techcontainer {
-  display: flex;
-}
-
-.techcard {
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 100px;
-  display: inline;
-}
-
-.techhtml {
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 100px;
-  display: inline;
-}
-
-.techcss {
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 100px;
-  display: inline;
-}
-
-.techjs {
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 100px;
-}
-
-/* STAR RATING */
-.checked {
-  color: orange;
-}
-
-/* SECTION tag Header area */
-.header {
-  height: 100vh;
-  font-size: 30px;
-  color: white;
-  background-color: gray;
-}
-
-/* Socials in Section tag Header */
-
-.mysocialstuff {
-  padding-bottom: 200px;
-}
-
-.socialstuff {
-  margin-top: 10px;
-}
-
-/* Footer element */
-
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
